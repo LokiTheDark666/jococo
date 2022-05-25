@@ -19,12 +19,12 @@ public class StatisticsServiceTest {
     }
 
     @Test
-    void FindMinus(){
+    void FindMinus() {
         StatisticsService service = new StatisticsService();
-        long[] incomesInMinus = {-4,0,0};
+        long[] incomesInMinus = {-4, 0, 0};
         long expected = 0;
 
         long actual = service.findMax(incomesInMinus);
-        assertEquals(expected,actual);
+        assertEquals(expected, actual);
     }
 }
