@@ -21,8 +21,8 @@ public class StatisticsServiceTest {
     @Test
     void FindMinus() {
         StatisticsService service = new StatisticsService();
-        long[] incomesInMinus = {-4, 4, 4};
-        long expected = 0;
+        long[] incomesInMinus = {-4, 4, 4, 4, 5, 3};
+        long expected = 5;
 
         long actual = service.findMax(incomesInMinus);
         assertEquals(expected, actual);
